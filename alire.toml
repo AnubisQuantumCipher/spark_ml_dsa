@@ -1,24 +1,13 @@
 name = "spark_ml_dsa"
 version = "1.0.0"
-description = "Pure SPARK Ada implementation of ML-DSA-87 (FIPS 204, Dilithium) post-quantum digital signatures"
-licenses = ["Apache-2.0"]
+description = "SPARK Ada ML-DSA-87 (FIPS 204, Dilithium) post-quantum digital signatures"
+licenses = "Apache-2.0"
 authors = ["AnubisQuantumCipher <sic.tau@pm.me>"]
 maintainers = ["AnubisQuantumCipher <sic.tau@pm.me>"]
 website = "https://github.com/AnubisQuantumCipher/spark_ml_dsa"
-tags = ["post-quantum", "ML-DSA", "Dilithium", "digital-signatures", "lattice-cryptography", "SPARK", "FIPS-204"]
+tags = ["post-quantum", "dilithium", "signatures", "spark", "fips-204"]
 project-files = ["spark_ml_dsa.gpr"]
 
 long-description = """
-Formally-verifiable implementation of the ML-DSA-87 post-quantum signature scheme with module-lattice cryptography, providing security against quantum computer attacks.
-
-Features:
-- ML-DSA-87 parameter set (Category 5 security)
-- Post-quantum security (lattice-based)
-- Deterministic and hedged signing modes
-- SHAKE256 XOF for sampling
-- Formally verifiable SPARK contracts
-- Constant-time critical operations
+ML-DSA-87 post-quantum digital signatures (FIPS 204). Module-lattice based, Category 5 security.
 """
-
-[[depends-on]]
-# No external dependencies - pure SPARK implementation
